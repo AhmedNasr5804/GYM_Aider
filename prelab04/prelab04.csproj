@@ -7,7 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\bg.jpg" />
+    <None Remove="bg.jpg" />
+    <None Remove="Pages\bg.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bg.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Pages\bg.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
